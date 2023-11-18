@@ -38,6 +38,7 @@
 }
 
 body {
+  color: var(--schiphol-blue);
   font-family: sans-serif;
 }
 
@@ -49,4 +50,17 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
 }

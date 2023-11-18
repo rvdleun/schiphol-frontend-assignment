@@ -8,13 +8,14 @@ import { getSearchQuery, setSearchQuery } from "@app/app/page.utils";
 import "./globals.css";
 import { Header } from "@app/components/Header/Header";
 import styles from "./page.module.scss";
-
+import { IconAndMessage } from "@app/components/IconAndMessage/IconAndMessage";
+import ErrorIcon from "@mui/icons-material/Error";
 export default function Home() {
   const [initialValue, setInitialValue] = useState<string>();
   const [showFlightList, setShowFlightList] = useState(false);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
-  const { flights } = useFlights(searchTerm);
+  const { flights, hasError } = useFlights(searchTerm);
 
   useEffect(() => {
     const searchQuery = getSearchQuery();
@@ -46,7 +47,18 @@ export default function Home() {
         onSearch={handleSearch}
         onStartTyping={handleStartTyping}
       />
-      {showFlightList && <FlightList flights={flights} />}
+      {hasError ? (
+        <IconAndMessage
+          icon={<ErrorIcon className={styles.errorIcon} />}
+          message="Something went wrong while retrieving the flights. Please try again later."
+        />
+      ) : (
+        showFlightList && (
+          <div className={styles.flightListContainer}>
+            <FlightList flights={flights} />
+          </div>
+        )
+      )}
     </main>
   );
 }

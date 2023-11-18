@@ -1,0 +1,14 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.icon {
+  animation: spin 2s infinite ease-in-out;
+  color: var(--schiphol-blue);
+  font-size: 128px !important;
+}

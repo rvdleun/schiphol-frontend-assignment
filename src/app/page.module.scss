@@ -5,3 +5,13 @@
   max-width: 900px;
   margin: 0 auto;
 }
+
+.errorIcon {
+  color: var(--dark-red);
+}
+.flightListContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -5,16 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9528c24-bba9-4d6f-b054-ee81bbe116c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/page.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/IconAndMessage/IconAndMessage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/IconAndMessage/IconAndMessage.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/IconAndMessage/IconAndMessage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Loader/Loader.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Loader/Loader.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Loader/Loader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.hooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.hooks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FlightList/FlightList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FlightList/FlightList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FlightList/FlightList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FlightList/FlightList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700312111591</updated>
-      <workItem from="1700312112976" duration="10619000" />
+      <workItem from="1700312112976" duration="13790000" />
     </task>
     <servers />
   </component>

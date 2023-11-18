@@ -1,4 +1,7 @@
-import style from "./FlightList.module.scss";
+import styles from "./FlightList.module.scss";
+import { Loader } from "@app/components/Loader/Loader";
+import { IconAndMessage } from "@app/components/IconAndMessage/IconAndMessage";
+import { AirplanemodeInactive } from "@mui/icons-material";
 
 interface FlightListProps {
   flights?: Flight[];
@@ -6,16 +9,21 @@ interface FlightListProps {
 
 export const FlightList = ({ flights }: FlightListProps) => {
   if (!flights) {
-    return <p>Loading flights...</p>;
+    return <Loader className={styles.loader} />;
   }
 
   if (flights.length === 0) {
-    return <p>No flights found</p>;
+    return (
+      <IconAndMessage
+        icon={<AirplanemodeInactive className={styles.emptyFlightList} />}
+        message="No flights were found."
+      />
+    );
   }
 
   return (
-    <table className={style.table}>
-      <thead className={style.head}>
+    <table className={`${styles.table} fade-in`}>
+      <thead className={styles.head}>
         <tr>
           <th>Identifier</th>
           <th>Number</th>
@@ -24,7 +32,7 @@ export const FlightList = ({ flights }: FlightListProps) => {
           <th>Expected time</th>
         </tr>
       </thead>
-      <tbody className={style.body}>
+      <tbody className={styles.body}>
         {flights.map((flight) => (
           <tr key={flight.flightIdentifier}>
             <td>{flight.flightIdentifier}</td>

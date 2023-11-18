@@ -15,6 +15,7 @@ export const AirportSearchForm: FC<AirportSearchFormProps> = ({
 }) => {
   const [debounceTimer, setDebounceTimer] =
     useState<ReturnType<typeof setTimeout>>();
+  const [showInstructions, setShowInstructions] = useState(false);
   const [value, setValue] = useState<string>("");
 
   useEffect(() => {
@@ -25,6 +26,7 @@ export const AirportSearchForm: FC<AirportSearchFormProps> = ({
     if (debounceTimer) {
       clearTimeout(debounceTimer);
     } else {
+      setShowInstructions(false);
       onStartTyping();
     }
 
@@ -33,12 +35,32 @@ export const AirportSearchForm: FC<AirportSearchFormProps> = ({
 
     const newDebounceTimer = setTimeout(() => {
       setDebounceTimer(undefined);
-      onSearch(isSearchTermValid(newValue) ? newValue : "");
+
+      if (!isSearchTermValid(newValue)) {
+        setShowInstructions(true);
+        onSearch("");
+        return;
+      }
+
+      setShowInstructions(false);
+      onSearch(newValue);
     }, 1000);
     setDebounceTimer(newDebounceTimer);
   };
 
   return (
-    <input className={styles.input} onChange={handleChange} value={value} />
+    <div>
+      <input
+        className={styles.input}
+        onChange={handleChange}
+        placeholder="Destination airport"
+        value={value}
+      />
+      {showInstructions && (
+        <p className={styles.instructions}>
+          Please fill in, at least, three characters
+        </p>
+      )}
+    </div>
   );
 };
