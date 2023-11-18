@@ -6,7 +6,13 @@ const fetcher = (input: RequestInfo | URL, init?: RequestInit) =>
 
 const flightsUrl = process.env.NEXT_PUBLIC_FLIGHTS_URL || "/flights.json";
 
-export const useFlights = (searchTerm: string) => {
+export interface FlightsRequestResult {
+  flights?: Flight[];
+  hasError?: boolean;
+  isLoading?: boolean;
+}
+
+export const useFlights = (searchTerm: string): FlightsRequestResult => {
   const { data, error, isLoading } = useSWR<FlightApiResponse>(
     searchTerm && flightsUrl,
     fetcher,

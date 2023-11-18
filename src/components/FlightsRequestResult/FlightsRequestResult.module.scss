@@ -1,0 +1,20 @@
+.emptyFlightList {
+  color: var(--dusk-green);
+}
+
+.emptyFlightList,
+.loader {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.errorIcon {
+  color: var(--dark-red);
+}
+
+.flightListContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

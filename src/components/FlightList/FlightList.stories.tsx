@@ -24,11 +24,3 @@ export const WithDifferentOriginalTime: Story = {
     ],
   },
 };
-
-export const EmptyFlightList: Story = {
-  args: {
-    flights: [],
-  },
-};
-
-export const NoFlightsPassed: Story = {};

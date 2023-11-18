@@ -15,7 +15,7 @@ export function getSearchQuery() {
   return params.get("search");
 }
 
-export function setSearchQuery(value: string) {
+export function updateSearchQuery(value: string) {
   const url = new URL(document.location.href);
   url.searchParams.set("search", value);
   history.pushState(null, "", url.toString());
