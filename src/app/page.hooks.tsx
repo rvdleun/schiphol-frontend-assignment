@@ -21,7 +21,7 @@ export const useFlights = (searchTerm: string) => {
   const { flights } = data;
 
   return {
-    flights: filterFlightsByAirport(flights, searchTerm),
+    flights: filterFlightsByAirport(flights, searchTerm).slice(0, 5),
     hasError,
     isLoading,
   };

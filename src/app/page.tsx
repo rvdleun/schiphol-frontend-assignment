@@ -6,6 +6,8 @@ import { FlightList } from "@app/components/FlightList/FlightList";
 import { getSearchQuery, setSearchQuery } from "@app/app/page.utils";
 
 import "./globals.css";
+import { Header } from "@app/components/Header/Header";
+import styles from "./page.module.scss";
 
 export default function Home() {
   const [initialValue, setInitialValue] = useState<string>();
@@ -37,8 +39,8 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <h1>Flights</h1>
+    <main className={styles.main}>
+      <Header />
       <AirportSearchForm
         initialValue={initialValue}
         onSearch={handleSearch}

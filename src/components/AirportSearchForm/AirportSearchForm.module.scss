@@ -1,3 +1,16 @@
 .input {
+  border-radius: 0.5rem;
+  border-color: var(--grey-broken);
+  border-style: solid;
+  box-shadow: none;
+  color: var(--schiphol-blue);
+  font-size: 16px;
+  padding: 10px;
   width: 100%;
+
+  &:focus {
+    border-color: var(--grey-overcast);
+    box-shadow: none;
+    outline: none;
+  }
 }

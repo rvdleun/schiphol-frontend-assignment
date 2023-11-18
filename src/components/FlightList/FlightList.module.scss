@@ -1,9 +1,14 @@
 .table {
   border: solid 1px black;
+  border-radius: 0.5rem;
+  margin: 0;
+  font-size: 20px;
   width: 100%;
 
-  td {
+  td,
+  th {
     border: none;
+    padding: 10px;
   }
 
   tr {
@@ -12,18 +17,18 @@
 }
 
 .head {
-  background-color: #f2f2f2;
-  font-weight: bold;
+  background-color: var(--afternoon-blue);
+  color: var(--white);
 }
 
 .body {
   tr {
     &:nth-child(even) {
-      background-color: #f2f2f2;
+      background-color: var(--grey-scattered);
     }
 
     &:hover {
-      background-color: #ddd;
+      background-color: var(--grey-few);
     }
   }
 }
