@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { FlightList } from "@app/components/FlightList/FlightList";
 import { flightFactory } from "@app/interfaces/flight.interface.factory";
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: "Components/FlightList",
   component: FlightList,
