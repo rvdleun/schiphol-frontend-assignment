@@ -5,37 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9528c24-bba9-4d6f-b054-ee81bbe116c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.storybook/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Button.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Configure.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Header.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Page.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/accessibility.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/accessibility.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/addon-library.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/assets.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/context.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/discord.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/docs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/figma-plugin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/share.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/styling.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/testing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/theming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/tutorials.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FlightList/FlightList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FlightList/FlightList.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FlightList/FlightList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/flight.interface.factory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Button.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Configure.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Header.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/accessibility.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/accessibility.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/addon-library.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/assets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/context.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/discord.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/docs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/figma-plugin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/styling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/testing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/theming.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/tutorials.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,24 +60,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/assignment",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/assignment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assignment" />
@@ -103,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700312111591</updated>
-      <workItem from="1700312112976" duration="2014000" />
+      <workItem from="1700312112976" duration="3389000" />
     </task>
     <servers />
   </component>
