@@ -58,7 +58,7 @@ export const AirportSearchForm: FC<AirportSearchFormProps> = ({
       />
       {showInstructions && (
         <p className={styles.instructions}>
-          Please fill in, at least, three characters
+          Please fill in at least three characters
         </p>
       )}
     </div>

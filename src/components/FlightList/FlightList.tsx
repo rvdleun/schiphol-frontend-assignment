@@ -25,9 +25,9 @@ export const FlightList = ({ flights }: FlightListProps) => {
     <table className={`${styles.table} fade-in`}>
       <thead className={styles.head}>
         <tr>
-          <th>Identifier</th>
-          <th>Number</th>
-          <th>Airport</th>
+          <th className={styles.hideOnMobile}>Airport</th>
+          <th className={styles.hideOnMobile}>Number</th>
+          <th className={styles.showOnMobile}>Airport & Number</th>
           <th>Date</th>
           <th>Expected time</th>
         </tr>
@@ -35,9 +35,13 @@ export const FlightList = ({ flights }: FlightListProps) => {
       <tbody className={styles.body}>
         {flights.map((flight) => (
           <tr key={flight.flightIdentifier}>
-            <td>{flight.flightIdentifier}</td>
-            <td>{flight.flightNumber}</td>
-            <td>{flight.airport}</td>
+            <td className={styles.hideOnMobile}>{flight.airport}</td>
+            <td className={styles.hideOnMobile}>{flight.flightNumber}</td>
+            <td className={styles.showOnMobile}>
+              <strong>{flight.airport}</strong>
+              <br />
+              {flight.flightNumber}
+            </td>
             <td>{flight.date}</td>
             <td>
               {flight.expectedTime !== flight.originalTime && (

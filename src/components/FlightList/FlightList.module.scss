@@ -14,15 +14,31 @@
   margin: 0;
   font-size: 20px;
   width: 100%;
+  pointer-events: none;
 
   td,
   th {
     border: none;
     padding: 10px;
+    vertical-align: top;
   }
 
   tr {
     border: none;
+  }
+
+  .showOnMobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .hideOnMobile {
+      display: none;
+    }
+
+    .showOnMobile {
+      display: block;
+    }
   }
 }
 
@@ -37,9 +53,7 @@
       background-color: var(--grey-scattered);
     }
 
-    &:hover {
-      background-color: var(--grey-white);
-    }
+    background-color: var(--grey-white);
   }
 }
 
