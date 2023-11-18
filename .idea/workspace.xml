@@ -5,12 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9528c24-bba9-4d6f-b054-ee81bbe116c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Button.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Configure.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Header.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Page.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/accessibility.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/accessibility.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/addon-library.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/assets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/context.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/discord.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/docs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/figma-plugin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/share.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/styling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/testing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/theming.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/tutorials.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/assets/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +52,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/local/Cellar/php/8.2.7/bin/php" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2YLkBPLKXbRn23Yb1MH2cmuGRL6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,15 +66,35 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment",
+    "last_opened_file_path": "/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/assignment",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/rubenvanderleun/Leunix/Projects/Leunix/schiphol-frontend-assignment/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assignment" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="storybook" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="storybook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700312111591</updated>
-      <workItem from="1700312112976" duration="733000" />
+      <workItem from="1700312112976" duration="2014000" />
     </task>
     <servers />
   </component>
