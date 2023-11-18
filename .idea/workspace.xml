@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9528c24-bba9-4d6f-b054-ee81bbe116c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jest.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/flights.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.utils.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.utils.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/flights.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/flights.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/preview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.hooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.hooks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AirportSearchForm/AirportSearchForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/flight.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/flight.interface.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.isSearchTermValid">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="Test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -164,7 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700312111591</updated>
-      <workItem from="1700312112976" duration="6387000" />
+      <workItem from="1700312112976" duration="9304000" />
     </task>
     <servers />
   </component>

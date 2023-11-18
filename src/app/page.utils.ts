@@ -7,3 +7,16 @@ export function filterFlightsByAirport(
     airport.toLowerCase().includes(search),
   );
 }
+
+export function getSearchQuery() {
+  if (typeof document === "undefined") return null;
+
+  const params = new URL(document.location.href).searchParams;
+  return params.get("search");
+}
+
+export function setSearchQuery(value: string) {
+  const url = new URL(document.location.href);
+  url.searchParams.set("search", value);
+  history.pushState(null, "", url.toString());
+}

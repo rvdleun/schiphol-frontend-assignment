@@ -1,10 +1,14 @@
 interface Flight {
-    "flightIdentifier": string;
-    "flightNumber": string;
-    "airport": string;
-    "date": string;
-    "expectedTime": string;
-    "originalTime": string;
-    "url": string;
-    "score": string;
+  flightIdentifier: string;
+  flightNumber: string;
+  airport: string;
+  date: string;
+  expectedTime: string;
+  originalTime: string;
+  url: string;
+  score: string;
+}
+
+interface FlightApiResponse {
+  flights: Flight[];
 }

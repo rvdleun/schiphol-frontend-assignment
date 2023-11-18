@@ -1,10 +1,10 @@
-import { FC, FormEvent, useState } from "react";
+import { FC, FormEvent, useEffect, useState } from "react";
 import styles from "./AirportSearchForm.module.scss";
 import { isSearchTermValid } from "@app/components/AirportSearchForm/AirportSearchForm.utils";
 
 interface AirportSearchFormProps {
   initialValue?: string;
-  onSearch: (searchTerm?: string) => void;
+  onSearch: (searchTerm: string) => void;
   onStartTyping: () => void;
 }
 
@@ -15,7 +15,11 @@ export const AirportSearchForm: FC<AirportSearchFormProps> = ({
 }) => {
   const [debounceTimer, setDebounceTimer] =
     useState<ReturnType<typeof setTimeout>>();
-  const [value, setValue] = useState<string | undefined>(initialValue);
+  const [value, setValue] = useState<string>("");
+
+  useEffect(() => {
+    setValue(initialValue || "");
+  }, [initialValue]);
 
   const handleChange = (event: FormEvent<HTMLInputElement>) => {
     if (debounceTimer) {
@@ -29,7 +33,7 @@ export const AirportSearchForm: FC<AirportSearchFormProps> = ({
 
     const newDebounceTimer = setTimeout(() => {
       setDebounceTimer(undefined);
-      onSearch(isSearchTermValid(newValue) ? newValue : undefined);
+      onSearch(isSearchTermValid(newValue) ? newValue : "");
     }, 1000);
     setDebounceTimer(newDebounceTimer);
   };
