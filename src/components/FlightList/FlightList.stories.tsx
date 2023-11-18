@@ -17,6 +17,14 @@ export const Primary: Story = {
   },
 };
 
+export const WithDifferentOriginalTime: Story = {
+  args: {
+    flights: [
+      flightFactory.build({ expectedTime: "13:00", originalTime: "12:00" }),
+    ],
+  },
+};
+
 export const EmptyFlightList: Story = {
   args: {
     flights: [],

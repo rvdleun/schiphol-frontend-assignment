@@ -38,6 +38,7 @@
 }
 
 body {
+  background-color: var(--grey-few);
   color: var(--schiphol-blue);
   font-family: sans-serif;
 }

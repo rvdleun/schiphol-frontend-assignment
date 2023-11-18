@@ -38,7 +38,12 @@
     }
 
     &:hover {
-      background-color: var(--grey-few);
+      background-color: var(--grey-white);
     }
   }
+}
+
+.originalTime {
+  color: var(--dark-red);
+  text-decoration: line-through;
 }

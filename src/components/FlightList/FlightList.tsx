@@ -39,7 +39,14 @@ export const FlightList = ({ flights }: FlightListProps) => {
             <td>{flight.flightNumber}</td>
             <td>{flight.airport}</td>
             <td>{flight.date}</td>
-            <td>{flight.expectedTime}</td>
+            <td>
+              {flight.expectedTime !== flight.originalTime && (
+                <span className={styles.originalTime}>
+                  {flight.originalTime}
+                </span>
+              )}{" "}
+              {flight.expectedTime}
+            </td>
           </tr>
         ))}
       </tbody>
