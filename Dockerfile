@@ -1,10 +1,9 @@
 FROM node:18 as builder
 WORKDIR /app
 
-ENV NEXT_PUBLIC_HAS_STORYBOOK=true
+ENV NEXT_PUBLIC_STORYBOOK_URL=/storybook/index.html
 
 COPY . ./
-RUN npx husky install
 RUN npm ci
 RUN npm run build
 RUN npm run build-storybook

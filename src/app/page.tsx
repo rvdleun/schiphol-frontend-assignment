@@ -43,8 +43,11 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      {process.env.NEXT_PUBLIC_HAS_STORYBOOK && (
-        <a href="/storybook/index.html" className={styles.storybookLogo}>
+      {process.env.NEXT_PUBLIC_STORYBOOK_URL && (
+        <a
+          href={process.env.NEXT_PUBLIC_STORYBOOK_URL}
+          className={styles.storybookLogo}
+        >
           <Image alt="Link to storybook" src={LogoStorybook} />
         </a>
       )}

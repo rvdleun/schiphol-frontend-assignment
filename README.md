@@ -1,4 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Schiphol Frontend Assignment
+
+<a href="https://gitmoji.dev">
+  <img
+    src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square"
+    alt="Gitmoji"
+  />
+</a>
+
+This is a frontend assignment for Schiphol. It is a simple web application that displays a list of flights and allows the user to filter the list by flight number.
+
+[The latest deployed version can be found here](https://schiphol-frontend-assignment.app.leunix.nl).
 
 ## Getting Started
 
@@ -6,31 +17,60 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to start developing.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[Prettier](https://prettier.io/) is used to format the code. With the use of [husky](https://typicode.github.io/husky/#/), the code will be formatted automatically on commit.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Environment variables
 
-## Learn More
+The following environment variables can be set to configure the application:
 
-To learn more about Next.js, take a look at the following resources:
+- NEXT_PUBLIC_FLIGHTS_URL
+  - This URL will be used to retrieve the flights data. If none is set, the application will use the default `/flights.json` URL.
+- NEXT_PUBLIC_STORYBOOK_URL
+  - If set, this will display a storybook logo on the top left of the application with a link to the storybook page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Storybook
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Storybook is used to develop and test components in isolation. To run storybook:
 
-## Deploy on Vercel
+```bash
+npm run storybook
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:6006](http://localhost:6006) to view the storybook.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Testing
+
+Unit tests are available for the utility functions, using Jest. To run the tests:
+
+```bash
+npm run test
+```
+
+## Docker
+
+The project can be run in a docker container. To build the image:
+
+```bash
+docker build -t schiphol-frontend-assignment .
+```
+
+To run the container:
+
+```bash
+docker run -p 80:80 schiphol-frontend-assignment
+```
+
+The image will have both the project and Storybook available. Open [http://localhost](http://localhost) to view the application, and [http://localhost/storybook/index.html](http://localhost/storybook/index.html) for storybook.
+
+## Notable dependencies
+
+- [Next.js](https://nextjs.org/) - Framework
+- [Storybook](https://storybook.js.org/) - Component development and documentation
+- [Prettier](prettier.io) - Code format
+- [Jest](https://jestjs.io/) - Unit testing
+- [SWR](https://swr.vercel.app/) - Data fetching
+- [@mui/icons-material](https://mui.com/material-ui/material-icons/) - Icons

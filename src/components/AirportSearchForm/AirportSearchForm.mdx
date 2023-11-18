@@ -1,0 +1,38 @@
+# AirportSearchForm
+This component is responsible for rendering the airport search form.
+
+It consists of a single input. The user can type in the name of an airport and will emit an event when the user has filled in a valid search term. If the user did not, then an empty search term will be emitted.
+
+A simple debounce is implemented to prevent the API from being called too often.
+
+## Properties
+<table>
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>initialValue</td>
+            <td>string</td>
+            <td>false</td>
+            <td>Initial value for the input</td>
+        </tr>
+        <tr>
+            <td>onSearch</td>
+            <td>function</td>
+            <td>true</td>
+            <td>Callback function to be called when the user fills in a valid search term</td>
+        </tr>
+        <tr>
+            <td>onStartTyping</td>
+            <td>function</td>
+            <td>true</td>
+            <td>Callback function to be called when the user starts typing</td>
+        </tr>
+    </tbody>
+</table>

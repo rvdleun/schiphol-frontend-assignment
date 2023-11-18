@@ -1,0 +1,27 @@
+# FlightsRequestResult
+This component will parse the results of the flights request and render the results.
+
+* When it's loading, the `Loader` component will be shown.
+* If an empty array is passed, an `IconAndMessage` will inform the user that no flights were found.
+* If `hasError` is set to true, an `IconAndMessage` will inform the user that an error occurred.
+* If `flights` is set, the `FlightList` component will be rendered.
+
+## Properties
+<table>
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>results</td>
+            <td>FlightsRequestResultData</td>
+            <td>true</td>
+            <td>The results from the endpoint, containing `flights`, `hasError` and `isLoading`</td>
+        </tr>
+    </tbody>
+</table>

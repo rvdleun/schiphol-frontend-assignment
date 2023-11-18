@@ -1,7 +1,4 @@
 import styles from "./FlightList.module.scss";
-import { Loader } from "@app/components/Loader/Loader";
-import { IconAndMessage } from "@app/components/IconAndMessage/IconAndMessage";
-import { AirplanemodeInactive } from "@mui/icons-material";
 
 interface FlightListProps {
   flights: Flight[];
