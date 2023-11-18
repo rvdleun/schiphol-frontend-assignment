@@ -8,6 +8,10 @@ import "./globals.css";
 import { Header } from "@app/components/Header/Header";
 import styles from "./page.module.scss";
 import { FlightsRequestResult } from "@app/components/FlightsRequestResult/FlightsRequestResult";
+
+import LogoStorybook from "./assets/logo-storybook.svg";
+import Image from "next/image";
+
 export default function Home() {
   const [initialValue, setInitialValue] = useState<string>();
   const [showFlightList, setShowFlightList] = useState(false);
@@ -39,6 +43,11 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      {process.env.NEXT_PUBLIC_HAS_STORYBOOK && (
+        <a href="/storybook/index.html" className={styles.storybookLogo}>
+          <Image alt="Link to storybook" src={LogoStorybook} />
+        </a>
+      )}
       <Header />
       <AirportSearchForm
         initialValue={initialValue}

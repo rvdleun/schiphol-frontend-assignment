@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9528c24-bba9-4d6f-b054-ee81bbe116c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FlightsRequestResult/FlightsRequestResult.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FlightsRequestResult/FlightsRequestResult.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FlightsRequestResult/FlightsRequestResult.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/assets/logo-storybook.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.hooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/flights.hooks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FlightList/FlightList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FlightList/FlightList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FlightList/FlightList.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FlightList/FlightList.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FlightList/FlightList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FlightList/FlightList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,7 @@
       <recent name="$PROJECT_DIR$/assignment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/assets" />
       <recent name="$PROJECT_DIR$/src/hooks" />
       <recent name="$PROJECT_DIR$/development" />
       <recent name="$PROJECT_DIR$/public" />

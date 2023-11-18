@@ -1,0 +1,5 @@
+.next
+development
+.node_modules
+.out
+storybook-static
